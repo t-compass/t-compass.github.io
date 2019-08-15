@@ -1,0 +1,664 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+    font-family: Arial, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.wrap {
+    margin: 0 auto;
+}
+
+.header {
+    border-bottom: 1px solid #bfbfbf;
+    box-shadow: 0 0 3px 1px #dadada;
+    padding-top: 6px;
+} 
+ 
+.header .wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+@media (max-width: 500px) {
+    .header .wrap {
+        flex-direction: column;
+    }
+    
+    .footer .wrap {
+        flex-direction: column;
+    }
+}
+
+.header .header_left {
+    align-self: center;
+} 
+
+.header .header_right {
+    display: flex;
+    justify-content: space-between;
+}
+
+#topmenu {
+    color: #8e8e8e;
+    padding-top: 8px;
+}
+
+#topmenu a {
+    color: #8e8e8e;
+    text-decoration: none;
+}
+
+#topmenu a:hover {
+    color: #dd5555;
+}
+
+#socials {
+    display: flex;
+    margin-left: 20px;
+}
+
+#socials a {
+    margin-top: 9px;
+    margin-right: 13px;
+}
+
+.twitter {
+    background: url("../images/twitter.png") no-repeat;
+    height: 11px;
+    width: 13px;
+}
+
+.twitter:hover{
+    background: url("../images/vimeo_active.png") no-repeat;
+    height: 11px;
+    width: 13px;
+}
+
+.vimeo {
+    background: url("../images/vimeo.png") no-repeat;
+    height: 11px;
+    width: 13px;
+}
+
+.vimeo:hover{
+    background: url("../images/vimeo_active.png") no-repeat;
+    height: 11px;
+    width: 13px;
+}
+
+.fb {
+    background: url("../images/facebook.png") no-repeat;
+    height: 13px;
+    width: 7px;
+}
+
+.fb:hover{
+    background: url("../images/facebook_active.png") no-repeat;
+    height: 11px;
+    width: 13px;
+}
+
+.instagram {
+    background: url("../images/instagram.png") no-repeat;
+    height: 12px;
+    width: 12px;
+}
+
+.instagram:hover{
+    background: url("../images/vimeo_active.png") no-repeat;
+    height: 11px;
+    width: 13px;
+}
+
+.dribbble {
+    background: url("../images/dribbble.png") no-repeat;
+    height: 13px;
+    width: 13px;
+}
+
+.dribbble:hover{
+    background: url("../images/vimeo_active.png") no-repeat;
+    height: 11px;
+    width: 13px;
+}
+
+.reddit {
+    background: url("../images/reddit.png") no-repeat;
+    height: 11px;
+    width: 13px;
+}
+
+.reddit:hover{
+    background: url("../images/vimeo_active.png") no-repeat;
+    height: 11px;
+    width: 13px;
+}
+
+#content {
+    background-color: #e9e9e9;
+    padding: 20px 0;
+}
+
+#content .wrap {
+    padding: 0 15px;
+}
+
+#content .wrap nav {
+    border-bottom: 1px solid #bfbfbf;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 640px) {
+    #content .wrap nav {
+        flex-direction: column;
+    }
+}
+
+#content .wrap #menu > ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#content .wrap #menu ul li {
+    margin-right: 30px;
+}
+
+#content .wrap #menu ul li:last-child {
+    margin-right: 10px;
+}
+
+#content .wrap #menu  ul  a{
+    color: #3f3f3f;
+    display: block;  
+    font-weight: bold;
+    padding-bottom: 15px;
+    text-decoration: none;
+}
+
+#content .wrap #menu  ul  a:hover{
+    color: #dd5555;
+    border-bottom: 1px solid #dd5555;
+    padding-bottom: 14px;
+}
+
+#content .wrap #menu  ul .submenu {
+    position: relative;
+    padding-left: 10px; 
+}
+
+#content .wrap #menu  ul .submenu > a {
+    background: url("../images/triangle.png") no-repeat right 20%; 
+    padding-right: 10px;
+}
+
+#content .wrap #menu  ul .submenu:hover ul {
+    display: block;
+}
+
+#content .wrap #menu  ul .submenu  ul {
+    background-color: #f9f9f9;
+    border: 1px solid #bfbfbf;
+    border-radius: 2px;
+    box-shadow: 0 0 5px #dadada;
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 20px;
+    width: 200px;
+    z-index: 10;
+}
+
+#content .wrap #menu  ul .submenu  ul  li {
+    margin-right: 0;
+    
+}
+
+#content .wrap #menu  ul .submenu  ul  a {
+    color: #3f3f3f;
+    font-weight: normal;
+    padding: 15px 0 15px 20px;
+}
+
+#content .wrap #menu  ul .submenu  ul  a:hover {
+    background-color: #dd5555;
+    color: #fff;
+}
+
+.search {
+    margin-top: -10px;
+}
+
+@media (max-width: 640px) {
+    .search {
+        padding-top: 3px;
+        margin-bottom: 10px;
+    }
+    
+    .search input[type="text"] {
+        width: 100% !important;
+    }
+}
+
+.search form {
+    display: flex;
+}
+.search  input[type="text"]{
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    color: #555;
+    margin-right: -23px;    
+    padding: 7px 0 7px 7px;
+    width: 200px;
+}  
+
+.search input[type="image"] {
+    cursor: pointer;
+    height: 16px;
+    margin-right: 5px;
+    margin-bottom: -3px;
+    padding-top: 8px;
+    
+}
+
+#content h1 {
+    color: #3f3f3f;
+    font-family: rsl;
+    font-size: 220%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#content h1 span {
+    font-size: bold;
+}
+
+#content  .subtitle {
+    color: #919191;
+    font-family: rsl;
+    font-size: 130%;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#content #gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#content #gallery .element {
+    background-color: #f9f9f9;
+    border: 1px solid #bfbfbf;
+    border-radius: 2px;
+    box-shadow: 0 0 3px #dadada;
+    margin: 15px 0;
+    position: relative;
+    width: 23%;
+}
+
+
+@media (max-width: 1100px) {
+    #content #gallery .element {
+        width: 32%;
+    }
+}
+
+@media (max-width: 750px) {
+    #content #gallery .element {
+        width: 45%;
+    }
+}
+
+@media (max-width: 560px) {
+    #content #gallery .element {
+        width: 95%;
+    }
+}
+
+
+
+#content #gallery .element .top {
+    position: relative;
+}
+
+#content #gallery .element .top:hover:before {
+    background-color: rgba(0, 0, 0, 0.2);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+#content #gallery .element .top .social {
+    display: none;
+    left: 10px;
+    position: absolute;
+    top: 10px;
+    z-index: 10;
+}
+
+#content #gallery .element .top:hover .social {
+    display: block;
+}
+
+#content #gallery .element .top .social p {
+    background-color: #fcf7f6;
+    border-radius: 3px;
+    color: #555;
+    display: inline-block;
+    padding: 6px 8px;
+}
+#content #gallery .element .top .social .download {
+    background: url("../images/download.png") no-repeat left center;
+    padding-left: 25px;
+}
+
+#content #gallery .element .top .social .like {
+    background: url("../images/like.png") no-repeat left center;
+    padding-left: 25px;
+}
+
+#content #gallery .element .top img {
+    width: 100%;
+}
+
+#content #gallery .element .bottom {
+    padding: 15px;
+}
+
+#content #gallery .element .bottom a {
+    color: #555;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#content #gallery .element .bottom a:hover {
+    color: #dd5555;
+}
+
+#content #gallery .element .bottom .date {
+    color: #c5c4c4;
+    font-size: 80%;
+    margin: 7px 0;
+}
+#content #gallery .element .bottom .intro {
+    color: #848484;
+    font-size: 90%;
+    line-height: 120%;
+}
+
+#content .pagination {
+    margin: 30px 0;
+}
+
+#content .pagination ul {
+    display: flex;
+    justify-content: center;
+}
+
+#content .pagination ul li {
+    margin-right: 10px;
+    
+}
+
+#content .pagination ul  a {
+    color: #848484;
+    border: 2px solid #cdcdcd;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 110%;
+    padding: 9px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 32px;
+}
+
+#content .pagination ul span {
+    color: #848484;
+    display: inline-block;
+    padding-top: 20px;
+}
+
+#content .pagination ul a:hover {
+    color: #dd5555;
+    font-weight: bold;
+}
+
+#content .pagination ul .active a {
+    color: #dd5555;
+    border: 2px solid #dd5555;
+}
+
+#content .banner {
+    text-align: center; 
+}
+
+#content .banner img {
+    max-width: 100%;
+}
+
+#content .banner a {
+    background-color: #fff;
+    border: 1px solid #bfbfbf;
+    border-radius: 3px;
+    box-shadow: 0 0 5px 3px #dadada;
+    display: inline-block;
+    padding: 10px;
+}
+
+.footer {
+    background-color: #f9f9f9;
+    border: 1px solid #bfbfbf;
+    box-shadow: 0 0 2px 2px #dadada;
+    padding: 15px;
+}
+.footer .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.footer .wrap .left {
+    margin-top: 35px;
+    width: 30%;
+}
+
+@media (max-width: 1040px) {
+    .footer .wrap .left {
+        width: 100%;
+    }
+    .footer .wrap .right {
+        margin-top: 20px;
+        width: 300px;
+    } 
+}
+
+@media (max-width: 962px) {
+    .footer .wrap .center {
+        justify-content: center;
+        width: 100% !important;
+    }
+    .footer .social {
+        margin-left: 7% !important;
+    }
+    .footer .wrap .right {
+        margin: 20px auto;
+    }
+}
+
+.footer .wrap .left p {
+    color: #848484;
+    font-size: 100%;
+    line-height: 150%;
+    margin-top: 10px;
+    overflow: auto;
+}
+
+.footer .wrap .center {
+    display: flex;
+    /*justify-content: space-between;*/
+    /*margin-left: -20px;*/
+    margin-top: 20px;
+    width: 30%;
+}
+
+.footer .menu p {
+    color: #555;
+    font-weight: bold;
+}
+
+.footer .menu ul a {
+    color: #848484;
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    
+}
+
+.footer .menu ul a:hover {
+    color: #dd5555;
+}
+
+.footer .social {
+    margin-left: 26%;
+}
+
+.footer .social li {
+    margin-top: 12px;
+}
+
+.footer .social a {
+    color: #848484;
+    display: inline-block;
+    margin: -3px 0 0 22px;
+    text-decoration: none;
+}
+
+.footer .social p {
+    color: #555;
+    font-weight: bold;
+}
+
+.footer .social .twitter a:hover {
+    color: #dd5555;
+}
+
+.footer .social .vimeo a:hover {
+    color: #dd5555;
+}
+
+.footer .social .fb a:hover {
+    color: #dd5555;
+}
+
+.footer .social .instagram a:hover {
+    color: #dd5555;
+}
+
+.footer .social .drobbble a:hover {
+    color: #dd5555;
+}
+
+.footer .social .reddit a:hover {
+    color: #dd5555;
+}
+
+.footer .right {
+    width: 30%;
+}
+
+.footer .wrap .right img {
+    max-width: 100%;
+}
+
+.footer_bottom .wrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+@media (max-width: 610px) {
+    .footer_bottom .wrap {
+        flex-direction: column;
+    }
+    .footer_bottom .right {
+        justify-content: center;
+    }
+    .footer_bottom .left {
+        justify-content: center;
+        margin-left: 0 !important;
+    }
+}
+
+@media (max-width: 422px) {
+    .footer_bottom .left p {
+        margin-bottom: 20px;
+    }
+    .footer_bottom .right {
+        margin-right: 0 !important;
+        margin-top: 0 !important;
+    }
+    #content .pagination ul  a {
+        padding: 5px 0;
+        width: 24px;
+    }
+}
+.footer_bottom  {
+    border: 1px solid #ccc;
+    box-shadow: 0 0 3px #ccc;
+}
+
+.footer_bottom .left {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.footer_bottom .left p {
+    color: #848484;
+    font-size: 90%;
+}
+.footer_bottom .left .menu {
+    margin-left: 20px;
+}
+
+.footer_bottom .left .menu span {
+    margin: 0 10px;
+}
+
+.footer_bottom .left .menu a {
+    color: #848484;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer_bottom .left .menu a:hover {
+    color: #dd5555;
+}
+
+.footer_bottom .right {
+    display: flex;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.footer_bottom .right a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #dd5555;
+}
