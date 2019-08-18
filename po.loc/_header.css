@@ -1,0 +1,129 @@
+@import url("reset.css");
+/********** top menu ***********/
+.navbar-inverse{
+    font-family: "RobotoRegular", sans-serif;
+    font-size: 16px;
+    border-color: transparent;
+}
+.navbar {
+    margin-bottom: 26px;
+}
+.nav>li>a {
+    padding: 10px 16px;
+}
+.navbar-nav>li>a {
+    line-height: 28px;
+}
+/* .navbar-nav .glyphicon{
+    font-family: 20px;
+} */
+
+/********** header ***********/
+.header{
+    font-family: "RobotoRegular", sans-serif;
+    font-size: 24px;
+    margin-bottom: 14px;
+    padding-top: 76px;
+}
+.header .h1{
+    font-family: RobotoRegular;
+    font-size: 68px;
+}
+.header .desc, .region{
+    font-size: 14px;
+    color: #8f8b8b;
+    line-height: 1.3;
+}
+.contacts{
+    padding-right: 28px;
+}
+.contacts p{
+    margin-bottom: 0;
+}
+.contacts .phone{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+/********** banner ***********/
+.banner-bg{
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+}
+.banner .carousel{
+    top: 11%;
+}
+.banner .carousel .item {
+	height: 400px;
+}
+.banner .carousel-control{
+    width: 12%;
+}
+.banner .carousel-caption {
+  position: relative;
+  /* right: 30%; */
+  bottom: 30px;
+  left: 0;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: left;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+.banner img{
+    width: 100%;
+    height: auto;
+}
+.banner .title{
+    margin-top: 6px;
+    margin-bottom: 38px;
+}
+.banner .title span{
+    /* font-family: RobotoThin; */
+    font-size: 64px;
+}
+.banner .content{
+    margin-bottom: 38px;
+}
+.banner .slide-2 .title {
+    margin-bottom: 12px;
+}
+.banner  .slide-2 .content{
+    margin-bottom: 30px;
+}
+
+/********** banner-boxes ***********/
+.banner-boxes-item{
+    position: relative;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+.banner-boxes-item a .overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: transparent;
+}
+.banner-boxes-item a:hover .overlay{
+    background-color: rgba(0,0,0, 0.2);
+    transition: all .3s ease;
+}
+.banner-boxes-item .section-text{
+    font-family: RobotoLight;
+    color: #fff;
+    /* margin: 0px; */
+    line-height: 1.4;
+    font-size: 18px;
+    z-index: 10;
+}
+

@@ -1,0 +1,762 @@
+
+@import url("_fonts.css");
+
+
+
+/* @import url("../po.loc/_fonts.css"); */
+.container-fluid{
+    padding-right: 0;
+    padding-left: 0;
+   
+}
+
+/* thypography */
+/* -- banner */
+h1,.h1{
+    font-family: RobotoRegular;
+    font-size: 68px;
+}
+-- section header investor etc
+h2,.h2{
+    font-family: RobotoThin;
+    font-size: 60px;
+    text-decoration: uppercase;
+}
+/* -- section title */
+h3,.h3{
+    font-family: OpenSansSemibold;
+    font-size: 42px;
+}
+/* -- info box */
+h4,.h4{
+    font-family: OpenSansRegular;
+    font-size: 36px;
+    text-decoration: uppercase;
+}
+/* -- section subtitle  */
+h5,.h5{
+    font-family: RobotoRegular;
+    /* font-family: RobotoLight; */
+    font-size: 24px;
+}
+.lead{
+    font-family: RobotoThinItalic;
+    font-size: 24px;
+}
+.text-muted{
+    color: #fff;
+}
+.text-info{
+    color: #555;
+}
+
+/* buttons */
+.btn {
+    font-family: OpenSansLight;
+	font-size: 20px;
+}
+.btn-default {
+  color: #990033;
+  border-color: #ccc;
+}
+.btn-default:hover{
+	background-color: #990033;
+	color: #fff;
+}
+.btn-default-blue {
+  color: #990033;
+  border-color: #ccc;
+  background-color: #fff;
+}
+.btn-default-blue:hover{
+	background-color: #337ab7;
+	color: #fff;
+}
+.btn-primary {
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+.btn-info {
+    background-color: #0000ff;
+    background-color: #2196f3;
+    background-color: #2084d6;    
+	color: #fff;
+	font-size: 19px;
+	padding: 15px 34px;
+	border-radius: 100px;
+    border: none;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, .3);
+}
+.btn-info:hover{
+	background-color: #337ab7;
+
+}
+.btn-info-danger{
+    background-color: #0000ff;
+    background-color: #2196f3;
+    background-color: #990033;    
+	color: #fff;
+	font-size: 19px;
+	padding: 15px 34px;
+	border-radius: 100px;
+    border: none;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, .3);
+}
+.btn-info-danger:hover {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+.btn-danger {
+  color: #fff;
+  background-color: #990033;
+  border-color: #d43f3a;
+}
+.btn-sm,
+.btn-group-sm > .btn {
+  padding: 5px 10px;
+  font-size: 18px;
+  line-height: 1.5;
+  border-radius: 4px;
+}
+.btn-xs,
+.btn-group-xs > .btn {
+  padding: 4px 7px;
+  font-size: 15px;
+  line-height: 1.5;
+  border-radius: 4px;
+}
+
+.btn-center{
+    display: block;
+    margin: 0 auto;
+    
+}
+
+/* ********* top menu ********** */
+.navbar-inverse{
+    background-color: #616161;
+    border-radius: 0;
+}
+.dropdown-menu > li > a {
+  display: block;
+  padding: 8px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap;
+}
+.dropdown-menu .divider {
+  height: 1px;
+  margin: 0px;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+.tooltip-inner {
+  width: 140px;
+  padding: 3px 8px;
+  color: #fff;
+  text-align: center;
+  background-color: #000;
+  border-radius: 4px;
+}
+
+/* ********* banner ********** */
+.carousel .item {
+	background-color: transparent;
+}
+
+.carousel-control.left, .carousel-control.right{
+    background-image: none;
+    
+}
+/* ********* section-2 what-we-do "Чем мы занимаемся" ********** */
+
+
+/* часто задаваемые вопросы */
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    padding: 5px;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+.table-hover > tbody > tr:hover {
+  background-color: #f5f5f5;
+  background-color: #d9edf7;
+}
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+body {
+    background-color: #fff;
+    padding-top: 0px;
+	font-size: 18px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.4;
+	font-family: "RobotoLight", sans-serif;
+	overflow-x: hidden;
+}
+.hidden {
+	display: none;
+}
+
+/* thypography */
+.content-text{
+    font-family: OpenSansLight;
+    font-size: 18px;
+    /* color: #555; */
+    /* line-height: 1.2; */
+}
+.infobox-text{
+    /* font-family: OpenSansSemibold; */
+    font-family: OpenSansRegular;
+    font-size: 18px;
+}
+.main-text{
+    /* font-family: RobotoThin; */
+    font-family: RobotoLight;
+    font-size: 18px;
+
+}
+.section-text{
+    /* font-family: RobotoThin; */
+    font-family: RobotoLight;
+    font-size: 22px;
+}
+a{
+    text-decoration: none;
+    /* color: #b2cfee; */
+    color: #6886c4;
+}
+.ul, .ol{
+    margin-left: 27px;
+}
+.bold{
+    font-weight: bold;
+}
+
+/* elipse */
+.elipse{
+	width: 46px;
+	height: 46px;
+	border-radius: 50%;
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+    text-align: center;
+    
+}
+.number{
+	color: #fff;
+	font-size: 20px;
+	font-family: RobotoLight;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    line-height: 46px;
+    
+}
+.elipse-red{
+	background-color: #990033;
+}
+.elipse-blue{
+	background-color: #2196f3;
+}
+.elipse-primary{
+	background-color: #337ab7;
+}
+.elipse-icon{
+    padding-top: 48px;
+}
+
+/********** main-content ***********/
+.pdn-top{
+    padding-top: 22px;
+}
+.pdn-top-lg{
+    padding-top: 40px;
+}
+.pdn-bottom{
+    padding-bottom: 30px;
+}
+.pdn-none{
+    
+}
+.hr{
+    /* margin-top: 30px; */
+    border-bottom: 1px solid #ccc;
+}
+.infobox{
+    width: 100%;
+	background-image: url("img/info-panel-bg.jpg");
+	padding: 31px 0;
+    box-sizing: border-box;
+}
+.section{
+    /* padding-top: 30px; */
+	/* border-bottom: 1px solid #bababa; */
+    margin-bottom: 30px;
+    /* padding-bottom: 30px; */
+}
+.section-h1, .section-h2{
+    font-family: RobotoThin;
+    text-decoration: uppercase;
+}
+.section-h1{
+    font-size: 90px;
+}
+.section-h2{
+    font-size: 56px;
+}
+.section-title{
+	margin-bottom: 67px;
+	text-align: left;
+    line-height: 0.8;
+}
+.img{
+    max-width: 100%;
+    padding-bottom: 15px;
+}
+.img-small{
+    height: 182px;
+    max-width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* box-sizing: border-box; */
+    /* display: flex; */
+    justify-content: space-between;
+}
+.main-content .item{
+	margin-bottom: 36px;
+}
+.main-content .title{
+	margin-bottom: 67px;
+	text-align: center;
+}
+.main-content .subtitle{
+	margin-bottom: 16px;
+}
+
+/********** section-1 about-us "Кто мы" ***********/
+.about-us.section{
+	/* border-bottom: none; */
+    /* margin-bottom: 30px; */
+}
+.documents{
+	height: 210px;
+	background: url("img/documents-bg.jpg");
+	padding: 31px 0 22px 0;
+}
+.documents .text-muted{
+	margin-bottom: 30px;
+}
+
+/********** section-2 what-we-do "Чем мы занимаемся" ***********/
+.what-we-do .ul{
+    margin-left: 20px;
+}
+.what-we-do .main-text {
+    font-size: 17px;
+}
+.what-we-do .panel {
+    height: 630px;
+    margin-bottom: 20px;
+    background-color: #f1f1f1;
+    border: 1px solid transparent;
+    border-bottom: 7px solid #336699;
+    border-radius: 0px;
+}
+.what-we-do .panel-heading {
+    padding: 19px 11px;
+}
+.what-we-do .panel-title{
+    color: #fff;
+	line-height: 1.8;
+}
+.what-we-do .panel-body ul{
+    padding: 10px 0;
+}
+.what-we-do .panel-body li{
+    margin-bottom: 10px;
+}
+.what-we-do .panel-body p.h5{
+    margin-top: 22px;
+}
+.what-we-do .first .hr{
+    margin-top: 23px;
+}
+.what-we-do .last .hr{
+    margin-top: 47px;
+}
+
+/********** section-3 our-concept "Наша концепция" ***********/
+.our-concept.section{
+    border-bottom: none;
+    /* margin-bottom: 30px; */
+}
+
+/* -- slider-po */
+.slider-po.section{
+    border-bottom: none;
+    margin-bottom: 30px;
+}
+.slider-po .carousel-control {
+  top: 50%;
+  font-size: 10px;
+  color: #616161;
+  text-shadow: none;
+  filter: alpha(opacity=50);
+  opacity: .5;
+}
+.slider-po .carousel .item {
+	height: 500px;
+}
+.slider-po .carousel-control{
+    width: 12%;
+}
+.slider-po .subtitle{
+    line-height: 0.9;
+}
+.slider-po .h5{
+    font-size: 26px;
+}
+.slider-po .content-text{
+    font-size: 16px;
+}
+.slider-po img{
+    width: 100%;
+    height: auto;
+}
+.slider-po .slide-2 img{
+    width: 94%;
+    height: auto;
+}
+.slider-po .slide-2 .title {
+    margin-bottom: 12px;
+}
+
+/********** section-4 our-projects "Наши проекты" ***********/
+.our-projects{
+    background-color: #f1f1f1;
+    padding-bottom: 30px;
+}
+.our-projects.section{
+    border-bottom: none;
+    /* margin-bottom: 30px; */
+}
+.our-projects .col-sm-3{
+    padding: 0;
+}
+
+/********** section-5 our-partners "С кем мы сотрудничаем?" ***********/
+.our-partners.section{
+    padding-bottom: 30px; 
+}
+.our-partners .item{
+    margin-bottom: 20px;
+}
+.our-partners .img{
+    padding-top: 134px;
+}
+.our-partners .elipse-icon{
+    padding-top: 48px;
+}
+
+/********** section-6 what-we-offer "Что мы предлагаем" ***********/
+/* .what-we-offer.section{
+    margin-bottom: 30px;
+} */
+.what-we-offer .panel {
+    height: 394px;
+    margin-bottom: 20px;
+    background-color: #f1f1f1;
+    /* border: 1px solid transparent; */
+    border-radius: 20px;
+    /* box-sizing: content-box; */
+}
+.what-we-offer .panel-heading {
+    /* padding: 10px 15px; */
+    padding-top: 32px;
+    background-color: #f1f1f1;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.what-we-offer .panel-body {
+    height: 206px;
+    padding: 15px 36px;
+}
+.what-we-offer .panel-body p{
+    line-height: 0.6;
+}
+.what-we-offer .section-text {
+    font-family: RobotoThin;
+    /* font-family: RobotoLight; */
+    font-size: 24px;
+}
+.what-we-offer .main-text {
+    /* font-family: RobotoThin; */
+    font-family: RobotoLight;
+    font-size: 15px;
+}
+.what-we-offer .text-info {
+   color: #999;
+}
+
+/********** section-7 be-investor "Стань инвестором" ***********/
+.be-investor.section{
+    padding-bottom: 30px; 
+}
+.be-investor .title{
+	/* margin-bottom: 67px; */
+	text-align: left;
+    line-height: 0.8;
+}
+.be-investor .desc li{
+    margin-bottom: 10px;
+}
+
+/********** section-8 how-to-be-investor "Как мы работаем с инвесторами" ***********/
+.how-to-be-investor.section{
+    padding-bottom: 30px; 
+}
+.how-to-be-investor .item{
+    margin-bottom: 20px;
+}
+.how-to-be-investor .pdn-top{
+    padding-top: 30px;
+}
+.img.col-sm-12{
+    padding-right: 0px; 
+    padding-left: 0px;
+}
+
+
+/********** section-9 want-to-invest "Хотите инвестировать" ***********/
+
+.want-to-invest .h4{
+    font-family: RobotoRegular;
+    font-size: 37px;
+    /* text-decoration: uppercase; */
+}
+.want-to-invest .h5 {
+    font-family: RobotoRegular;
+    font-size: 27px;
+}
+.want-to-invest .pdn-top {
+    padding-top: 41px;
+}
+.want-to-invest .panel{
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    -webkit-box-shadow: none;
+    box-shadow: none;  
+}
+.want-to-invest .panel-heading, .want-to-invest .panel-body{
+    padding: 26px;
+}
+.want-to-invest .panel-heading {
+    padding: 26px;
+    border-color: transparent;
+    border-radius: 8px;
+}
+.want-to-invest .panel-right{
+    background-color: #a8a8a8;
+}
+.want-to-invest .panel-right .item {
+    margin-bottom: 54px;
+}
+.want-to-invest .panel-right .panel-heading {
+    color: #fff;
+    background-color: #a8a8a8;
+    padding: 30px 26px;
+    /* border-bottom: 1px solid transparent; */
+    /* border-top-left-radius: 8px; */
+    /* border-top-right-radius: 8px; */
+}
+.want-to-invest .panel-right .section-text{
+    font-weight: bold;
+    /* font-family: RobotoThin; */
+    font-family: RobotoLight;
+    font-size: 20px;
+}
+.want-to-invest span{
+    color: #990033;
+    font-style: italic;
+    padding: 4px;
+}
+.want-to-invest .panel-left .panel-heading span{
+    background-color: #ccc;
+    padding: 0px 14px;
+    line-height: 1.7;
+}
+.want-to-invest .panel-footer{
+    background-color: #fff;
+    border: none;   
+}
+.want-to-invest .btn-info-danger, .want-to-invest .btn-info{
+  padding: 9px 30px;
+  font-size: 18px;
+  line-height: 1.5;
+  /* margin: 13px; */
+}
+.want-to-invest .btn-default{
+    background-color: transparent;
+    color: #fff;
+    box-shadow: 0 2px 3px #575555 inset; 
+}
+
+/********** section-10 be-businessman "Стань предпринимателем" ***********/
+.be-businessman{
+    /* position: relative; */
+}
+.infobox{
+	height: 208px;
+}
+
+/********** section-11 how-to-be-businessman "Как мы работаем с предпринимателями" ***********/
+.how-to-be-businessman{
+    /* padding-bottom: 30px; */
+}
+
+/********** section-12 be-worker "Стань сотрудником" ***********/
+.local-h5{
+    font-family: RobotoLight;
+    padding-top: 16px;
+    padding-left: 4px;
+    font-size: 24px;
+}
+.be-worker .local-h5{
+    color: red;
+}
+.be-worker.infobox{
+    height: 270px;
+}
+
+/********** section-13 how-to-be-worker "Как мы работаем с сотрудниками" ***********/
+
+
+/********** section-14 be-participant "Стань участником" ***********/
+.be-participant .local-h5{
+    color: #999;
+}
+
+
+/********** section-15 how-to-be-participant "Как мы работаем с сотрудниками" ***********/
+
+
+/********** section-16 our-advantages "Наши преимущества" ***********/
+.our-advantages{
+    background-color: #f1f1f1;
+}
+/* -- slider-adv */
+.slider-adv .carousel-control {
+  top: -20%;
+  font-size: 10px;
+  color: #616161;
+  text-shadow: none;
+  filter: alpha(opacity=50);
+  opacity: .5;
+}
+.slider-adv .carousel .item {
+	/* height: 300px; */
+}
+.slider-adv .carousel-control{
+    width: 0%;
+}
+.slider-adv .subtitle{
+    /* line-height: 0.9; */
+}
+.slider-adv .h5{
+    /* font-size: 26px; */
+}
+.slider-adv .content-text{
+    /* font-size: 16px; */
+}
+.slider-adv .carousel-control.right {
+    right: 125px;
+}
+.slider-adv .carousel-indicators li {
+    border: 1px solid #616161;
+}
+.slider-adv .carousel-indicators .active {
+    background-color: #616161;
+}
+
+/********** section-17 advantages-items "Наши преимущества блоки" ***********/
+
+
+/********** section-17 faq "Часто задаваемые вопросы" ***********/
+.faq{
+    background-color: #f5f5f5;
+}
+.faq .h5 {
+    margin-top: 2px;
+}
+.faq a {
+    color: #6886c4;
+}
+.faq .table span{
+    margin-right: 10px;
+}
+/********** section-18 how-to-join-us "Как ствть участником нашего сообщества" ***********/
+.how-to-join-us a.h5 {
+    font-family: RobotoLight;
+    /* font-size: 24px; */
+}
+.how-to-join-us .subtitle {
+    margin-bottom: 31px;
+}
+
+/********** section-19 ask-questions "Остались вопросы" ***********/
+.ask-questions .section-title {
+    margin-bottom: 43px;
+    text-align: left;
+    line-height: 0.8;
+}
+.right-block{
+    border-left: 1px solid #ccc;
+    padding-left: 38px;
+}
+
+/********** section-20 contuct-us "Контакты" ***********/
+.contuct-us.section{
+    background-color: #286090;
+    margin-bottom: 0px;
+}
+.contuct-us .btn-sm, .btn-group-sm > .btn {
+    padding: 5px 55px;
+/*     font-size: 18px;
+    line-height: 1.5;
+    border-radius: 4px; */
+}
+.contuct-us .btn-primary:hover {
+  color: #fff;
+  /* background-color: #286090; */
+  border-color: #d1d1d1;
+}
