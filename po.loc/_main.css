@@ -220,6 +220,9 @@ h5,.h5{
 .modal-sm{
     width: 390px;
 }
+.form-control{
+    font-size: 16px;
+}
 
 
 *::-webkit-input-placeholder {
