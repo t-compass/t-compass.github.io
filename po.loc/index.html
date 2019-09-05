@@ -136,7 +136,7 @@
                             <div class="carousel-caption">
                                 <h1 class="title h1">Стань<br><span>предпринимателем</span></h1>
                                 <p class="content section-text text-muted">Пройди обучение и получи до 10 млн. рублей   на проект</p>
-                                <p><a class="btn btn-info" href="#" role="button">Отправить заявку</a></p>
+                                <p><a class="btn btn-info" href="#modalForm"  data-toggle="modal" role="button">Отправить заявку</a></p>
                             </div>
                         </div>
                     </div>
@@ -153,7 +153,7 @@
                                         <li>Инвестируй от 1000 рублей </li>
                                         <li>Получай дивиденды до 100% годовых</li>
                                     </ul>                               
-                                <p><a class="btn btn-info" href="#" role="button">Отправить заявку</a></p>
+                                <p><a class="btn btn-info" href="#modalForm"  data-toggle="modal" role="button">Отправить заявку</a></p>
                             </div>                          
                         </div>   
                     </div>
@@ -168,7 +168,7 @@
                                             <li>Получи доступ в Крымские проекты</li>
                                             <li>Стань партнером, зарабатывай и получай дивиденды</li>
                                         </ul>
-                                    <p><a class="btn btn-info" href="#" role="button">Отправить заявку</a></p>
+                                    <p><a class="btn btn-info" href="#modalForm" data-toggle="modal" role="button">Отправить заявку</a></p>
                                 </div>
                             </div>
                         </div>
@@ -240,7 +240,20 @@
         </div>
         <div class="documents container-fluid">
             <p class="infobox-text container text-muted"> Мы работаем на условно платной основе по принципу сообщества. Т.е. за символическую плату в 600 рублей вы можете стать участником нашего сообщества и получить доступ ко всем сервисам и возможностям инвестирования, предпринимательства, трудоустройства и участия в социально-экономических программах.</p>
-            <button class="btn btn-default btn-center">Наши документы</button>
+            <button class="btn btn-default btn-center" data-toggle="modal" data-target="#modalDoc">Наши документы</button>
+            <!-- modal -->
+            <div id="modalDoc" class="modal fade docs" tabindex="-1" role="dialog">        
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img/doc.png" alt="doc" >
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- what-we-do -->
          <div class="what-we-do section hr pdn-top container">
@@ -284,7 +297,25 @@
                                 <li>Школа молодого инвестора</li>
                                 <li>База проектов для инвестирования</li>                            
                             </ul> 
-                            <button class="btn btn-default btn-sm btn-center">MoneyBooster проекты</button>
+                            <button class="btn btn-default btn-sm btn-center" data-toggle="modal" data-target="#modalMB">MoneyBooster проекты</button>
+                            <!-- modal -->
+                            <div id="modalMB" class="modal fade" tabindex="-1" role="dialog">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                            <h4 class="modal-title">MoneyBooster проекты</h4>
+                                            <!-- <small class="text-info">Modal title</small> -->
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>One fine body…</p>
+                                        </div>                                  
+                                        <div class="modal-footer pdn-top">
+                                            <button type="button" class="btn btn-primary btn-sm btn-center" data-dismiss="modal">Закрыть</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -525,7 +556,7 @@
                         <li>База проектов постоянно растет</li>
                     </ul>
                     <p class="lead">Стань инвестором - отправь заявку прямо сейчас</p>                   
-                    <div class="pdn-top"><button type="button" class="btn btn-info">Отправить заявку</button></div>
+                    <div class="pdn-top"><button type="button" class="btn btn-info"  data-toggle="modal" data-target="#modalForm">Отправить заявку</button></div>
                 </div>                
             </div>                
                 <!-- <div class="pdn-top"><button type="button" class="btn btn-info btn-center">Отправить заявку</button></div> -->
@@ -542,7 +573,7 @@
                             <p class="main-text text-info item">                             
                                 После заполнения заявки наш менеджер свяжется с вами и обсудит порядок и условия участия.                            
                             </p>
-                            <button type="button" class="btn btn-default btn-sm">Отправить заявку</button>
+                            <button type="button" class="btn btn-default btn-sm"  data-toggle="modal" data-target="#modalForm">Отправить заявку</button>
                         </div>
                         <div class="elipse-icon col-sm-2"><div class="elipse number elipse-red">1</div></div>
                     </div>  
@@ -568,7 +599,8 @@
                             <p class="main-text text-info item">                             
                                 Для выбора проекта инвестор становится участником нашего сообщества, т.е. регистрируется на нашем портале "Товарный компас" и оплачивает вступительный взнос 600 рублей. На текущий момент запущено 18 инвестиционных проектов. База проектов постоянно расширяется.                          
                             </p>
-                            <button type="button" class="btn btn-default btn-sm">Подробнее об оплате</button>
+                            <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modalPay">Подробнее об оплате</button>
+                            
                             <button type="button" class="btn btn-default btn-sm">База проектов</button>
                         </div>
                         <div class="elipse-icon col-sm-2"><div class="elipse number elipse-red">3</div></div>
@@ -582,7 +614,25 @@
                             <p class="main-text text-info item">                             
                                 Минимальная сумма инвестиций - 1000 рублей. Минимальный срок инвестиций - 1 год. Инвестиции вносятся на расчетный счет нашего Потребительского Общества и затем вкладываются в проекты. Мы инвестируем толко в Крымские проекты, которые можно легко контролировать и управлять.                            
                             </p>
-                            <button type="button" class="btn btn-default-blue btn-sm">Узнать подробнее</button>
+                            <button type="button" class="btn btn-default-blue btn-sm" data-toggle="modal" data-target="#modalInvest">Узнать подробнее</button>
+                            <!-- modal -->
+                            <div id="modalInvest" class="modal fade" tabindex="-1" role="dialog">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                            <h4 class="modal-title">Как происходит инвестирование</h4>
+                                            <!-- <small class="text-info">Modal title</small> -->
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>One fine body…</p>
+                                        </div>                                  
+                                        <div class="modal-footer pdn-top">
+                                            <button type="button" class="btn btn-primary btn-sm btn-center" data-dismiss="modal">Закрыть</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>   
                 </div>  
@@ -608,13 +658,31 @@
                             <p class="main-text text-info item">                             
                                 Т.к. мы разрабатываем и берем в работу только высокодоходные проекты наши инвесторы могут получать 100% и более процентов годовых. Дивиденды начисляются и выплачиваются ежегодно в конце календарного года по результатам работы проекта на банковскую карту инвестора.                            
                             </p>
-                            <button type="button" class="btn btn-default-blue btn-sm">Узнать подробнее</button>
+                            <button type="button" class="btn btn-default-blue btn-sm" data-toggle="modal" data-target="#modalGetDivid">Узнать подробнее</button>
+                            <!-- modal -->
+                            <div id="modalGetDivid" class="modal fade" tabindex="-1" role="dialog">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                            <h4 class="modal-title">Дивиденды</h4>
+                                            <!-- <small class="text-info">Modal title</small> -->
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>One fine body…</p>
+                                        </div>                                  
+                                        <div class="modal-footer pdn-top">
+                                            <button type="button" class="btn btn-primary btn-sm btn-center" data-dismiss="modal">Закрыть</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>   
                 </div>   
                 
             </div>  
-            <div class="pdn-top"><button type="button" class="btn btn-info btn-center">Подать заявку на участие в инвестициях</button></div>
+            <div class="pdn-top"><button type="button" class="btn btn-info btn-center"  data-toggle="modal" data-target="#modalForm">Подать заявку на участие в инвестициях</button></div>
         </div>
         
         
@@ -648,12 +716,48 @@
                             <div class="item">
                                 <div class="section-text">Вариант №1</div>
                                 <p class="main-text">Самостоятельное выполнение всех требований MoneyBooster проекта</p>
-                                <button class="btn btn-default btn-xs pull-right">Узнать подробнее</button>
+                                <button class="btn btn-default btn-xs pull-right" data-toggle="modal" data-target="#modalWantInvest-1">Узнать подробнее</button>
+                                <!-- modal -->
+                                <div id="modalWantInvest-1" class="modal fade modalWantInvest-1" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                <h4 class="modal-title">Вариант №1</h4>
+                                                <!-- <small class="text-info">Modal title</small> -->
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>One fine body…</p>
+                                            </div>                                  
+                                            <div class="modal-footer pdn-top">
+                                                <button type="button" class="btn btn-primary btn-sm btn-center" data-dismiss="modal">Закрыть</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="item">
                                 <div class="section-text">Вариант №2</div>
                                 <p class="main-text">Выполнение требований MoneyBooster проекта с <b class="bold">частичной</b> или <b class="bold">полной</b> передачей нашим специалистам.</p>
-                                <button class="btn btn-default btn-xs pull-right">Узнать подробнее</button>
+                                <button class="btn btn-default btn-xs pull-right" data-toggle="modal" data-target="#modalWantInvest-2">Узнать подробнее</button>
+                                <!-- modal -->
+                                <div id="modalWantInvest-2" class="modal fade modalWantInvest-2" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                <h4 class="modal-title">Вариант №2</h4>
+                                                <!-- <small class="text-info">Modal title</small> -->
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>One fine body…</p>
+                                            </div>                                  
+                                            <div class="modal-footer pdn-top">
+                                                <button type="button" class="btn btn-primary btn-sm btn-center" data-dismiss="modal">Закрыть</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -681,7 +785,7 @@
                         <li>Отправь заявку прямо сейчас</li>
                     </ul>
                     <p class="lead">"Будь сам себе работодателем - стань предпринимателем"</p>                   
-                    <div class="pdn-top"><button type="button" class="btn btn-info">Отправить заявку</button></div>
+                    <div class="pdn-top"><button type="button" class="btn btn-info"  data-toggle="modal" data-target="#modalForm">Отправить заявку</button></div>
                 </div>                
             </div>                
         </div>
@@ -731,7 +835,7 @@
                             <p class="main-text text-info item">                             
                                 Для выбора проекта какндидат становится участником нашего сообщества, т.е. регистрируется на нашем портале "Товарный компас" и оплачивает вступительный взнос 600 рублей. <br> На текущий момент запущено 18 инвестиционных проектов. База проектов постоянно расширяется.                          
                             </p>
-                            <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modalText">Подробнее об оплате</button>
+                            <button type="button" class="btn btn-default btn-sm"  data-toggle="modal" data-target="#modalPay">Подробнее об оплате</button>
                             <button type="button" class="btn btn-default btn-sm">База проектов</button>
                         </div>
                         <div class="elipse-icon col-sm-2"><div class="elipse number elipse-red">3</div></div>
@@ -745,7 +849,25 @@
                             <p class="main-text text-info item">                             
                                 Максимальная сумма финансирования до 10 млн. рублей. <br> Срок финансирования до 3 лет. <br>Финансирование производится с расчетного счета нашего Потребительского общества "Товарный компас" или напрямую от частных инвесторов, с которыми мы сотрудничаем.                          
                             </p>
-                            <button type="button" class="btn btn-default-blue btn-sm">Узнать подробнее</button>
+                            <button type="button" class="btn btn-default-blue btn-sm" data-toggle="modal" data-target="#modalGetFin">Узнать подробнее</button>
+                            <!-- modal -->
+                            <div id="modalGetFin" class="modal fade" tabindex="-1" role="dialog">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                            <h4 class="modal-title">Финансирование, запуск и развитие проекта</h4>
+                                            <!-- <small class="text-info">Modal title</small> -->
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>One fine body…</p>
+                                        </div>                                  
+                                        <div class="modal-footer pdn-top">
+                                            <button type="button" class="btn btn-primary btn-sm btn-center" data-dismiss="modal">Закрыть</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>   
                 </div>  
@@ -771,13 +893,31 @@
                             <p class="main-text text-info item">                             
                                 Т.к. предприниматель является соучредителем проекта, то имеет право на получение части прибыли (дивидендов). Процент и сумма дивидендов оговариваются отдельно по каждому проекту.<br> Дивиденды могут начисляться и выплачиваться ежегодно в конце календарного года или ежемесячно в виде зарплаты.                           
                             </p>
-                            <button type="button" class="btn btn-default-blue btn-sm">Узнать подробнее</button>
+                            <button type="button" class="btn btn-default-blue btn-sm" data-toggle="modal" data-target="#modalGetProfit">Узнать подробнее</button>
+                            <!-- modal -->
+                            <div id="modalGetProfit" class="modal fade" tabindex="-1" role="dialog">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                            <h4 class="modal-title">Доход от участия в проекте</h4>
+                                            <!-- <small class="text-info">Modal title</small> -->
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>One fine body…</p>
+                                        </div>                                  
+                                        <div class="modal-footer pdn-top">
+                                            <button type="button" class="btn btn-primary btn-sm btn-center" data-dismiss="modal">Закрыть</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>   
                 </div>   
                 
             </div>  
-            <div class="pdn-top"><button type="button" class="btn btn-info btn-center">Подать заявку на участие как предприниматель</button></div>
+            <div class="pdn-top"><button type="button" class="btn btn-info btn-center"  data-toggle="modal" data-target="#modalForm">Подать заявку на участие как предприниматель</button></div>
         </div>
         
         <!-- be-worker -->
@@ -802,7 +942,7 @@
                         <li>Получи право на пособие по безработице</li>                       
                     </ul>
                     <p class="lead">"Стань сотрудником с приоритетным статусом - отправь заявку прямо сейчас"</p>                   
-                    <div class="pdn-top"><button type="button" class="btn btn-info">Отправить заявку</button></div>
+                    <div class="pdn-top"><button type="button" class="btn btn-info"  data-toggle="modal" data-target="#modalForm">Отправить заявку</button></div>
                 </div>                
             </div>                
         </div>
@@ -825,7 +965,7 @@
                             <p class="main-text text-info item">                             
                                 После заполнения заявки наш менеджер свяжется с вами и обсудит порядок и условия участия.                            
                             </p>
-                            <button type="button" class="btn btn-default btn-sm">Отправить заявку</button>
+                            <button type="button" class="btn btn-default btn-sm"  data-toggle="modal" data-target="#modalForm">Отправить заявку</button>
                         </div>
                         <div class="elipse-icon col-sm-2"><div class="elipse number elipse-red">1</div></div>
                     </div>  
@@ -847,7 +987,7 @@
                         <div class="col-sm-10 text-right">
                             <p class="subtitle h5">Определяется проект и вакансия для работы</p>
                             <p class="main-text text-info item">В зависимости от результатов собеседования для соискателя подбирается проект и вакансия. Для получения работы соискатель становится участником нашего сообщества, т.е. регистрируется на нашем портале "Товарный компас" и оплачивает вступительный взнос 600 рублей. На текущий момент в нашей базе 18 инвестиционных проектов готовых к работе. Около 40 вакансий. База проектов и вакансий постоянно расширяется.</p>
-                            <button type="button" class="btn btn-default btn-sm">Подробнее об оплате</button>
+                            <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modalPay">Подробнее об оплате</button>
                             <button type="button" class="btn btn-default btn-sm">База вакансий</button>
                         </div>
                         <div class="elipse-icon col-sm-2"><div class="elipse number elipse-red">3</div></div>
@@ -887,7 +1027,7 @@
                 </div>   
                 
             </div>  
-            <div class="pdn-top"><button type="button" class="btn btn-info btn-center">Подать заявку на участие как сотрудник</button></div>
+            <div class="pdn-top"><button type="button" class="btn btn-info btn-center"  data-toggle="modal" data-target="#modalForm">Подать заявку на участие как сотрудник</button></div>
         </div>
         
         <!-- be-participant -->
@@ -912,7 +1052,7 @@
                         
                     </ul>
                     <p class="lead">"Стань участником наших программ - отправь заявку прямо сейчас"</p>                   
-                    <div class="pdn-top"><button type="button" class="btn btn-info">Отправить заявку</button></div>
+                    <div class="pdn-top"><button type="button" class="btn btn-info"  data-toggle="modal" data-target="#modalForm">Отправить заявку</button></div>
                 </div>                
             </div>                
         </div>
@@ -928,7 +1068,7 @@
                             <p class="main-text text-info item">                             
                                 После заполнения заявки наш менеджер свяжется с вами и обсудит порядок и условия участия.                            
                             </p>
-                            <button type="button" class="btn btn-default btn-sm">Отправить заявку</button>
+                            <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modalForm">Отправить заявку</button>
                         </div>
                         <div class="elipse-icon col-sm-2"><div class="elipse number elipse-red">1</div></div>
                     </div>  
@@ -952,7 +1092,7 @@
                             <p class="subtitle h5">Подбирается программа и вариант участия</p>
                             <p class="main-text text-info item">По результатам консультирования для участника подбирается соответствующая программа. Для пользования программой участник становится членом нашего сообщества, т.е. регистрируется на нашем портале "Товарный компас" и оплачивает вступительный взнос 600 рублей. На текущий момент в нашей базе 10 программ социально-экономического назначения. База программ постоянно расширяется.                          
                             </p>
-                            <button type="button" class="btn btn-default btn-sm">Подробнее об оплате</button>
+                            <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modalPay">Подробнее об оплате</button>
                             <button type="button" class="btn btn-default btn-sm">Программы</button>
                         </div>
                         <div class="elipse-icon col-sm-2"><div class="elipse number elipse-red">3</div></div>
@@ -964,7 +1104,25 @@
                         <div class=" col-sm-10">
                             <p class="subtitle h5">Участвует в программе</p>
                             <p class="main-text text-info item">Согласно выбранной программе, участник&nbsp; выполняет необходимые действия. Порядок и условия участия в соответствующем договоре на программу.</p>
-                            <button type="button" class="btn btn-default-blue btn-sm">Узнать подробнее</button>
+                            <button type="button" class="btn btn-default-blue btn-sm" data-toggle="modal" data-target="#modalProg">Узнать подробнее</button>
+                            <!-- modal -->
+                            <div id="modalProg" class="modal fade" tabindex="-1" role="dialog">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                            <h4 class="modal-title">Участие в программах</h4>
+                                            <!-- <small class="text-info">Modal title</small> -->
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>One fine body…</p>
+                                        </div>                                  
+                                        <div class="modal-footer pdn-top">
+                                            <button type="button" class="btn btn-primary btn-sm btn-center" data-dismiss="modal">Закрыть</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>   
                 </div>  
@@ -992,7 +1150,7 @@
                 </div>   
                 
             </div>  
-            <div class="pdn-top"><button type="button" class="btn btn-info btn-center">Подать заявку на участие в программах</button></div>
+            <div class="pdn-top"><button type="button" class="btn btn-info btn-center"  data-toggle="modal" data-target="#modalForm">Подать заявку на участие в программах</button></div>
         </div>
         
         <!-- our-advantages -->
@@ -1406,6 +1564,24 @@
             </div>
         <!-- </div> -->
     </div>
+    <!-- modal payment -->
+    <div id="modalPay" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Оплата</h4>
+                    <!-- <small class="text-info">Modal title</small> -->
+                </div>
+                <div class="modal-body">
+                    <p>One fine body…</p>
+                </div>                                  
+                <div class="modal-footer pdn-top">
+                    <button type="button" class="btn btn-primary btn-sm btn-center" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="modalForm" class="modal fade" tabindex="-1" role="dialog">
         <!-- <div class="modal"> -->
             <div class="modal-dialog modal-sm">
@@ -1413,10 +1589,10 @@
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times; </button>
                         <h4 class="modal-title">Заявка</h4>
-                        <small class="text-info">на участие</small>
+                        <small class="text-info"></small>
                     </div>
                     <div class="modal-body">
-                        <form action="/action_page.php">
+                        <form action="/action_page.php" method="post">
                        <!--  <div class="form-group">
                             <label for="theme">Тема заявки</label>
                             <input type="text" class="form-control" id="theme" required>
@@ -1425,35 +1601,36 @@
                         <div class="form-group">
                             <label for="theme" class="col-lg- control-labe">Тема заявки на участие</label>
                             <div class="col-lg-">
-                                <select class="form-control" id="theme">
-                                    <option>как Инвестор</option>
-                                    <option>как Предприниматель</option>
-                                    <option>как Сотрудник</option>
-                                    <option>как Участник программ</option>
+                                <select class="form-control" id="theme" name="theme">
+                                    <option value="0">просто Регистрация в Сообществе</option>
+                                    <option value="1">как Инвестор</option>
+                                    <option value="2">как Предприниматель</option>
+                                    <option value="3">как Сотрудник</option>
+                                    <option value="4">как Участник программ</option>
                                 </select>  
                                 <p class="help-block">Выберите тему заявки из списка</p>                                
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="name">Ваше имя</label>
-                            <input type="text" class="form-control" id="name">
+                            <input type="text" class="form-control" id="name" name="name">
                             <p class="help-block">Введите Ваше имя</p>
                         </div>
                         <div class="form-group">
                             <label for="phone">Ваш телефон</label>
-                            <input type="phone" class="form-control" id="phone" required>
+                            <input type="phone" class="form-control" id="phone" name="phone">
                             <p class="help-block">Введите Ваш телефон</p>
                         </div>                        
                         <div class="form-group">
                             <label for="email">Ваш email</label>
-                            <input type="email" class="form-control" id="email">
+                            <input type="email" class="form-control" id="email" name="email">
                             <p class="help-block">Введите Ваш email</p>
                         </div>                       
                           <!-- <div class="checkbox">
                             <label><input type="checkbox"> Remember me</label>
                           </div> -->
                           <div class="col-sm-offset-2 pdn-top">
-                              <button type="submit" class="btn btn-primary btn-sm">Отправить</button>
+                              <button type="submit" class="btn btn-primary btn-sm" name="submit">Отправить</button>
                               <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Отмена</button>
                           </div>
                         </form>
