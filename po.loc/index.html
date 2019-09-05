@@ -555,7 +555,7 @@
                         <li>Более 18 реальных проектов на текущий момент</li>
                         <li>База проектов постоянно растет</li>
                     </ul>
-                    <p class="lead">Стань инвестором - отправь заявку прямо сейчас</p>                   
+                    <p class="lead">"Стань инвестором - отправь заявку прямо сейчас"</p>                   
                     <div class="pdn-top"><button type="button" class="btn btn-info"  data-toggle="modal" data-target="#modalForm">Отправить заявку</button></div>
                 </div>                
             </div>                
@@ -1427,26 +1427,26 @@
         <!-- how-to-join-us -->
         <div id="how-to-join-us" class="how-to-join-us section hr pdn-bottom col-sm-12 item">
             <div class="container col-sm-push-1 col-sm-10">
-                <div class="title h3">Как стать участником нашего сообщества?</div>
+                <div class="title h3 text-center pdn-bottom">Как стать участником нашего сообщества?</div>
                 <div class="col-sm- item">
-                    <div class="subtitle h5 item">Почему был создан этот проект?</div>
+                    <div class="subtitle h5 item">1.Выберите вид участия</div>
                     <div class="row">
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 ">
                             <a href="#how-to-be-investor" class="chrome btn btn-primary btn-sm btn-center h5 text-uppercase col-sm-">инвестор</a>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 ">
                             <a href="#how-to-be-businessman" class="chrome btn btn-danger btn-sm  btn-center  h5 text-uppercase col-sm-">предприниматель</a>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 ">
                             <a href="#how-to-be-worker"  class="btn btn-primary btn-sm  btn-center  h5 text-uppercase col-sm-">сотрудник</a>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 ">
                             <a href="#how-to-be-participant"  class="btn btn-danger btn-sm  btn-center  h5 text-uppercase col-sm-">участник программ</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm- item">
-                    <div class="subtitle h5">Почему был создан этот проект?</div>
+                    <div class="subtitle h5 pdn-top">2.Следуйте пошаговой инструкции</div>
                 </div>
             </div>
         </div>
@@ -1456,24 +1456,28 @@
             <div class="container col-sm-push-1 col-sm-10">
                 <div class="col-sm-8 item ">
                     <div class="section-title section-h2 text-uppercase">остались вопросы?</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    <p class="pdn-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    </p>
+                        
+                    <p  class="lead">
+                        Или позвоните по телефону +7(978) 84 - 15 - 699
                     </p>
                 </div>
                 <div class="col-sm-4 item  right-block wel">
-                    <form class="pdn-top">
+                    <form class="pdn-top" name="phoneOrder">
                         <fieldset>
                             <!-- <legend>Legend</legend> -->
                             <div class="form-group">
-                                <label for="inputEmail" class="col-lg- control-label">Email</label>
+                                <label for="inputName" class="col-lg- control-label">Ваше имя</label>
                                 <div class="col-lg-">
-                                    <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+                                    <input type="text" class="form-control" id="inputName" placeholder="Имя">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="inputPassword" class="col-lg- control-label">Password</label>
+                                <label for="inputPhone" class="col-lg- control-label">Ваш телефон</label>
                                 <div class="col-lg-">
-                                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                                    <input type="phone" class="form-control" id="inputPhone" placeholder="Телефон">
                                     <!-- <div class="checkbox">
                                         <label>
                                             <input type="checkbox"> Checkbox
@@ -1484,7 +1488,7 @@
                             <div class="form-group">
                                 <div class="col-lg- col-lg-offset- pdn-top-lg">
                                     <!-- <button type="reset" class="btn btn-default">Cancel</button> -->
-                                    <button type="submit" class="btn btn-primary btn-sm btn-center">Заказать звонок</button>
+                                    <button type="submit" class="btn btn-primary btn-sm btn-center" name="submit">Заказать звонок</button>
                                 </div>
                             </div>
                         </fieldset>
@@ -1504,30 +1508,25 @@
                     </p>
                 </div>
                 <div class="col-sm-4 item right-block">
-                    <form class="wel">
+                    <form class="wel" name="contactForm" method="get">
                         <fieldset>
                             <legend class="text-muted h5 text-cente">Свяжитесь с нами</legend>
                             <div class="form-group pdn-top">
-                                <label for="inputEmail" class="col-lg- control-label">Email</label>
+                                <label for="inputContact" class="col-lg- control-label">Ваше имя</label>
+                                <div class="col-lg-">
+                                    <input type="text" class="form-control" id="inputContact" placeholder="Имя">
+                                </div>
+                            </div>
+                            <div class="form-group pdn-top">
+                                <label for="inputEmail" class="col-lg- control-label">Ваш Email</label>
                                 <div class="col-lg-">
                                     <input type="text" class="form-control" id="inputEmail" placeholder="Email">
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="inputPassword" class="col-lg- control-label">Password</label>
-                                <div class="col-lg-">
-                                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-                                    <!-- <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox"> Checkbox
-                                        </label>
-                                    </div> -->
-                                </div>
-                            </div>                                                      
+                            </div>                                                    
                             <div class="form-group">
                                 <div class="col-lg- col-lg-offset- pdn-top">
                                     <!-- <button type="reset" class="btn btn-default">Cancel</button> -->
-                                    <button type="submit" class="btn btn-primary btn-sm btn-cente">Связаться</button>
+                                    <button type="submit" class="btn btn-primary btn-sm btn-cente" name="send">Связаться</button>
                                 </div>
                             </div>
                         </fieldset>
