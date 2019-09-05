@@ -208,6 +208,9 @@ h5,.h5{
     border-bottom: 0px solid #e5e5e5;
     text-align: center;
 }
+.modal-content h4, .modal-content .h4 {
+    font-size: 33px;
+}
 .modal-footer {
     /* padding: 15px; */
     /* text-align: right; */
@@ -222,6 +225,12 @@ h5,.h5{
 }
 .form-control{
     font-size: 16px;
+}
+.modalWantInvest-1, .modalWantInvest-2{
+    color: #000;
+}
+.form-control:focus {
+    border-color: transparent;
 }
 
 
@@ -418,6 +427,12 @@ a{
 }
 .documents .text-muted{
 	margin-bottom: 30px;
+}
+.documents .modal-body{
+    padding: 0px;
+}
+.documents .modal-content {
+    width: 480px;
 }
 
 /********** section-2 what-we-do "Чем мы занимаемся" ***********/
