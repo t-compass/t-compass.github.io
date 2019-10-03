@@ -1,28 +1,33 @@
 <?php
+/* print_r($_GET);
+
+exit(); */
+
 require_once 'phpmailer_class.php';
 
 // Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer(true);
 $mail->CharSet = 'utf-8';
 
-$name = $_POST['user_name'];
-$phone = $_POST['user_phone'];
-$email = $_POST['user_email'];
+$theme = $_GET['theme'];
+$name = $_GET['name'];
+// $phone = $_GET['phone'];
+$email = $_GET['email'];
 
 try {
     //Server settings
-    $mail->SMTPDebug = 2;                                       // Enable verbose debug output
+    /* $mail->SMTPDebug = 2;                                       // Enable verbose debug output
     $mail->isSMTP();                                            // Set mailer to use SMTP
     $mail->Host       = 'smtp.mail.ru';                         // Specify main and backup SMTP servers
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
     $mail->Username   = 'kfp-krym@mail.ru';                     // SMTP username
-    $mail->Password   = 'secret';                               // SMTP password
+    $mail->Password   = 'hfxbntkmyjcnm';                               // SMTP password
     $mail->SMTPSecure = 'ssl';                                  // Enable TLS encryption, `ssl` also accepted
-    $mail->Port       = 465;                                    // TCP port to connect to
+    $mail->Port       = 465;   */                                  // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('kfp-krym@mail.ru', 'Mailer');
-    $mail->addAddress('timnick80@mail.ru', 'Joe User');     // Add a recipient
+    $mail->setFrom('kfp-krym@mail.ru', 'Site ADR');
+    $mail->addAddress('timnick80@mail.ru', 'Admin');     // Add a recipient
     /* $mail->addAddress('ellen@example.com');               // Name is optional
     $mail->addReplyTo('info@example.com', 'Information');
     $mail->addCC('cc@example.com');
@@ -34,9 +39,9 @@ try {
 
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'Заявка с сайта Альянс Деловых Ресурсов';
-    $mail->Body    = '';
-    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+    $mail->Subject = 'Письмо с сайта Альянс Деловых Ресурсов';
+    $mail->Body    = "Поступило письмо с сайта АДР " . " Тема:" . $theme . " Имя:" . $name . " Почта:" . $email;
+    $mail->AltBody = "Поступило письмо с сайта АДР " . " Тема:" . $theme . " Имя:" . $name . " Почта:" . $email;
 
     if($mail->send()){
         header('location: thank-you.html');
