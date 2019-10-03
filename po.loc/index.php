@@ -367,7 +367,7 @@
             </div>
         </div>
         <!-- our-concept -->
-        <div id="our-concep" class="our-concept section container col-sm-push-1 col-sm-10">
+        <div id="our-concept" class="our-concept section container col-sm-push-1 col-sm-10">
             <div class="title h3">Наша концепция</div>
             <div class="">
                 <p class="item main-text text-info">"Один в поле не воин". Очень мало людей на сегодняшний день могут достичь сколько-нибудь значимых успехов в одиночку. Большинство людей, к сожалению, обречены вести свою жизнь "на грани выживания", да еще и с учетом мирового и общероссийского кризиса. Наше государство, Россия, конечно же стремится помогать своим гражданам, но далеко не все получается.</p>
@@ -1409,7 +1409,7 @@
                             <div>
                                 <a href="#colapsed-text-2" class="" data-toggle="collapse">
                                 <span class="glyphicon glyphicon-menu-down text-info small"></span>
-                                Основные социально-экономичесие вопросы Крыма</a>
+                                Основные социально-экономические вопросы Крыма</a>
                                 <div id="colapsed-text-2" class="collapse ul">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -1476,31 +1476,31 @@
                                        <td><span class="glyphicon glyphicon-ok-circle text-info small"></span>Хотите новую мебель, бытовую технику и т.д.? Но не хватает текущей зарплаты?</td>          
                                     </tr>
                                      </tr>
-                                       <td><span class="glyphicon glyphicon-ok-circle text-info small"></span></td>          
+                                       <td><span class="glyphicon glyphicon-ok-circle text-info small"></span>Хотите чтобы Ваш доход был более стабильным и не зависел только от Вашей зарплаты и работы?</td>          
                                     </tr>
                                      </tr>
-                                       <td><span class="glyphicon glyphicon-ok-circle text-info small"></span></td>          
+                                       <td><span class="glyphicon glyphicon-ok-circle text-info small"></span>Хотите уйти на пенсию в 50 лет и получать 40 000 - 50 000 рублей в месяц?</td>          
                                     </tr>
                                      </tr>
-                                       <td><span class="glyphicon glyphicon-ok-circle text-info small"></span></td>          
+                                       <td><span class="glyphicon glyphicon-ok-circle text-info small"></span>Хотите обеспечить детям достойное образование? Но не знаете, где взять такие деньги?</td>          
                                     </tr>
                                      </tr>
-                                       <td><span class="glyphicon glyphicon-ok-circle text-info small"></span></td>          
+                                       <td><span class="glyphicon glyphicon-ok-circle text-info small"></span>Хотите скопить детям на свадьбу?</td>          
                                     </tr>
                                      </tr>
-                                       <td><span class="glyphicon glyphicon-ok-circle text-info small"></span></td>          
+                                       <td><span class="glyphicon glyphicon-ok-circle text-info small"></span>Хотите позаботиться о будущем своих детей или внуков и оставить им достойное наследство?</td>          
                                     </tr>
                                      </tr>
-                                       <td><span class="glyphicon glyphicon-ok-circle text-info small"></span></td>          
+                                       <td><span class="glyphicon glyphicon-ok-circle text-info small"></span>Хотите создать свой бизнес? Но не знаете как это сделать и где взять стартовый капитал?</td>          
                                     </tr>
                                      </tr>
-                                       <td><span class="glyphicon glyphicon-ok-circle text-info small"></span></td>          
+                                       <td><span class="glyphicon glyphicon-ok-circle text-info small"></span>Есть капитал и Вы хотели бы получить от него максимальную выгоду? Но не знаете куда вложить?</td>          
                                     </tr>
                                      </tr>
-                                       <td><span class="glyphicon glyphicon-ok-circle text-info small"></span></td>          
+                                       <td><span class="glyphicon glyphicon-ok-circle text-info small"></span>Хотели бы оставить в жизни "хороший след", но не знаете как это сделать?</td>          
                                     </tr>
                                      </tr>
-                                       <td><span class="glyphicon glyphicon-ok-circle text-info small"></span></td>          
+                                       <td><span class="glyphicon glyphicon-ok-circle text-info small"></span>Хотели бы принять реальное участие в развитии Крыма?</td>          
                                     </tr>
                                     
                                 </tbody>
@@ -1552,19 +1552,19 @@
                     </p>
                 </div>
                 <div class="col-sm-4 item  right-block wel">
-                    <form class="pdn-top" name="phoneOrder">
+                    <form class="pdn-top" name="phoneOrder" action="callback_form.php" method="get">
                         <fieldset>
                             <!-- <legend>Legend</legend> -->
                             <div class="form-group">
                                 <label for="inputName" class="col-lg- control-label">Ваше имя</label>
                                 <div class="col-lg-">
-                                    <input type="text" class="form-control" id="inputName" placeholder="Имя">
+                                    <input type="text" class="form-control" id="inputName" name="name" placeholder="Имя">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="inputPhone" class="col-lg- control-label">Ваш телефон</label>
                                 <div class="col-lg-">
-                                    <input type="phone" class="form-control" id="inputPhone" placeholder="Телефон">
+                                    <input type="phone" class="form-control" id="inputPhone" name="phone" placeholder="Телефон">
                                     <!-- <div class="checkbox">
                                         <label>
                                             <input type="checkbox"> Checkbox
@@ -1595,24 +1595,24 @@
                     <p class="pdn-top-lg pdn-bottom">Адрес:<br>Республика Крым, г.Симферополь, ул.Гагарина, 14а</p>
                 </div>             
                 <div class="col-sm-4 item right-block">
-                    <form class="wel" name="contactForm" method="get">
+                    <form class="wel" name="contactForm" action="contact_form.php" method="get">
                         <fieldset>
                             <legend class="text-muted h5 text-cente">Свяжитесь с нами</legend>
                             <div class="form-group pdn-top">
                                 <label for="inputContact" class="col-lg- control-label">Ваше имя</label>
                                 <div class="col-lg-">
-                                    <input type="text" class="form-control" id="inputContact" placeholde="Имя">
+                                    <input type="text" class="form-control" id="inputContact" name="name" placeholder="например Андрей">
                                 </div>
                             </div>
                             <div class="form-group pdn-top">
                                 <label for="inputEmail" class="col-lg- control-label">Ваш Email</label>
                                 <div class="col-lg-">
-                                    <input type="text" class="form-control" id="inputEmail" placeholde="Email">
+                                    <input type="text" class="form-control" id="inputEmail" name="email" placeholder="например youmail@mail.ru">
                                 </div>
                             </div>     
                             <div class="form-group pdn-top">
                               <label for="comment">Тема письма</label>
-                              <textarea class="form-control" rows="3" id="comment" placeholder="Напишите здесь Ваше сообщение..."></textarea>
+                              <textarea class="form-control" rows="3" id="comment" name="message" placeholder="Напишите здесь Ваше сообщение..."></textarea>
                             </div>
                             <div class="form-group">
                                 <div class="col-lg- col-lg-offset- pdn-top">
@@ -1631,6 +1631,7 @@
     
     
     <!-- modals -->
+    <!-- modal layout -->
     <div id="modalText" class="modal fade" tabindex="-1" role="dialog">
         <!-- <div class="modal"> -->
             <div class="modal-dialog">
@@ -1654,6 +1655,7 @@
             </div>
         <!-- </div> -->
     </div>
+    
     <!-- modal payment -->
     <div id="modalPay" class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog">
@@ -1706,6 +1708,8 @@
             </div>
         </div>
     </div>
+    
+    <!-- modal general form -->
     <div id="modalForm" class="modal fade" tabindex="-1" role="dialog">
         <!-- <div class="modal"> -->
             <div class="modal-dialog modal-sm">
@@ -1716,47 +1720,47 @@
                         <small class="text-info"></small>
                     </div>
                     <div class="modal-body">
-                        <form action="/action_page.php" method="post">
+                        <form name="generalForm" action="general_form.php" method="get">
                        <!--  <div class="form-group">
                             <label for="theme">Тема заявки</label>
                             <input type="text" class="form-control" id="theme" required>
                             <p class="help-block">Выберите тему заявки из списка</p>
                         </div> -->
-                        <div class="form-group">
-                            <label for="theme" class="col-lg- control-labe">Тема заявки на участие</label>
-                            <div class="col-lg-">
-                                <select class="form-control" id="theme" name="theme">
-                                    <option value="0">просто Регистрация в Сообществе</option>
-                                    <option value="1">как Инвестор</option>
-                                    <option value="2">как Предприниматель</option>
-                                    <option value="3">как Сотрудник</option>
-                                    <option value="4">как Участник программ</option>
-                                </select>  
-                                <p class="help-block">Выберите тему заявки из списка</p>                                
+                            <div class="form-group">
+                                <label for="theme" class="col-lg- control-labe">Тема заявки на участие</label>
+                                <div class="col-lg-">
+                                    <select class="form-control" id="theme" name="theme">
+                                        <option value="0">просто Регистрация в Сообществе</option>
+                                        <option value="1">как Инвестор</option>
+                                        <option value="2">как Предприниматель</option>
+                                        <option value="3">как Сотрудник</option>
+                                        <option value="4">как Участник программ</option>
+                                    </select>  
+                                    <p class="help-block">Выберите тему заявки из списка</p>                                
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="name">Ваше имя</label>
-                            <input type="text" class="form-control" id="name" name="name">
-                            <p class="help-block">Введите Ваше имя</p>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Ваш телефон</label>
-                            <input type="phone" class="form-control" id="phone" name="phone">
-                            <p class="help-block">Введите Ваш телефон</p>
-                        </div>                        
-                        <div class="form-group">
-                            <label for="email">Ваш email</label>
-                            <input type="email" class="form-control" id="email" name="email">
-                            <p class="help-block">Введите Ваш email</p>
-                        </div>                       
-                          <!-- <div class="checkbox">
-                            <label><input type="checkbox"> Remember me</label>
-                          </div> -->
-                          <div class="col-sm-offset-2 pdn-top">
-                              <button type="submit" class="btn btn-primary btn-sm" name="submit">Отправить</button>
-                              <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Отмена</button>
-                          </div>
+                            <div class="form-group">
+                                <label for="name">Ваше имя</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="например Андрей">
+                                <!-- <p class="help-block">Введите Ваше имя</p> -->
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Ваш телефон</label>
+                                <input type="phone" class="form-control" id="phone" name="phone" placeholder="например +7(978)84-15-699">
+                                <!-- <p class="help-block">Введите Ваш телефон</p> -->
+                            </div>                        
+                            <div class="form-group">
+                                <label for="email">Ваш email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="например yourmail@mail.ru">
+                                <!-- <p class="help-block">Введите Ваш email</p> -->
+                            </div>                       
+                              <!-- <div class="checkbox">
+                                <label><input type="checkbox"> Remember me</label>
+                              </div> -->
+                              <div class="col-sm-offset-2 pdn-top">
+                                  <button type="submit" class="btn btn-primary btn-sm" name="submit">Отправить</button>
+                                  <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Отмена</button>
+                              </div>
                         </form>
                     </div>
                     <!-- <div class="modal-footer">
