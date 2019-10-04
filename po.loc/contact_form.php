@@ -1,5 +1,6 @@
 <?php
-/* print_r($_GET);
+/* if(isset($_GET['theme']))echo 'dfsd';
+// print_r($_GET);
 
 exit(); */
 
@@ -11,8 +12,8 @@ $mail->CharSet = 'utf-8';
 
 $theme = $_GET['theme'];
 $name = $_GET['name'];
-// $phone = $_GET['phone'];
 $email = $_GET['email'];
+
 
 try {
     //Server settings
@@ -20,13 +21,13 @@ try {
     $mail->isSMTP();                                            // Set mailer to use SMTP
     $mail->Host       = 'smtp.mail.ru';                         // Specify main and backup SMTP servers
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    $mail->Username   = 'kfp-krym@mail.ru';                     // SMTP username
-    $mail->Password   = 'hfxbntkmyjcnm';                               // SMTP password
+    $mail->Username   = 't-compass@mail.ru';                     // SMTP username
+    $mail->Password   = 'Cjghbxfcnbt699';                               // SMTP password
     $mail->SMTPSecure = 'ssl';                                  // Enable TLS encryption, `ssl` also accepted
     $mail->Port       = 465;   */                                  // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('kfp-krym@mail.ru', 'Site ADR');
+    $mail->setFrom('t-compass@mail.ru', 'Site ADR');
     $mail->addAddress('timnick80@mail.ru', 'Admin');     // Add a recipient
     /* $mail->addAddress('ellen@example.com');               // Name is optional
     $mail->addReplyTo('info@example.com', 'Information');
